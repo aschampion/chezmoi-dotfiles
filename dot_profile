@@ -1,0 +1,19 @@
+
+export PATH="$HOME/.cargo/bin:$HOME/.gem/ruby/2.6.0/bin:$PATH"
+export PATH="/opt/local/lib/cmtk/bin/:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+#source $(brew --prefix nvm)/nvm.sh
+export PATH="$NVM_DIR/versions/node/v$(<$NVM_DIR/alias/default)/bin:$PATH"
+
+# Do this in a function rather than $-calls because those do not run lazily.
+load_nvm () {
+	FOOBAR=$(brew --prefix nvm)
+	[ -s $FOOBAR/nvm.sh ] && . $FOOBAR/nvm.sh
+}
+alias nvm="unalias nvm; load_nvm; nvm $@"
+
+# Rancher desktop
+export PATH="$PATH:$HOME/.rd/bin"
+
+. "$HOME/.rye/env"
