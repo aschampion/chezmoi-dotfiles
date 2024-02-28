@@ -8,7 +8,7 @@
 	default = simple
 [core]
 	editor = vim
-	excludesfile = /Users/championa/.gitignore_global
+	excludesfile = $HOME/.gitignore_global
 #[url "ssh://git@github.com/"]
 #	insteadOf = https://github.com/
 [grep]
