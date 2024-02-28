@@ -1,8 +1,5 @@
 export CLICOLOR=1
 
-export GUROBI_HOME=/Library/gurobi652/mac64
-export GUROBI_ROOT_DIR=/Library/gurobi652/mac64
-
 export CUDA_HOME=/usr/local/cuda
 export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
 export PATH="$CUDA_HOME/bin:$PATH"
